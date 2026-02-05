@@ -1,4 +1,5 @@
 import {dataApp} from "./constants/index";
+import { pelaksanaBukaPuasa } from "./constants/ramadhan";
 import Kas from "./components/Kas";
 import Ramadhan from "./components/Ramadhan";
 import Grid from "./components/Grid";
@@ -25,8 +26,7 @@ export default function App() {
         "Minggu",
       ];
       let hari = namaHari[hr];
-      let tgl =
-        waktu.getDate() < 10 ? "0" + waktu.getDate() : waktu.getDate();
+      let tgl = waktu.getDate() < 10 ? "0" + waktu.getDate() : waktu.getDate();
       let bln = waktu.getMonth();
       const namaBulan = [
         "Januari",
@@ -47,31 +47,16 @@ export default function App() {
       let jam =
         waktu.getHours() < 10 ? "0" + waktu.getHours() : waktu.getHours();
       let menit =
-        waktu.getMinutes() < 10
-          ? "0" + waktu.getMinutes()
-          : waktu.getMinutes();
+        waktu.getMinutes() < 10 ? "0" + waktu.getMinutes() : waktu.getMinutes();
       let detik =
-        waktu.getSeconds() < 10
-          ? "0" + waktu.getSeconds()
-          : waktu.getSeconds();
+        waktu.getSeconds() < 10 ? "0" + waktu.getSeconds() : waktu.getSeconds();
       setTanggalHariIni(`${hari}, ${tgl} ${bulan} ${thn}`);
       setJamBerjalan(`${jam}:${menit}:${detik} WITA`);
       setTahun(waktu.getFullYear());
     }, 1);
   }, []);
 
-  const [bukaPuasa, setBukaPuasa] = useState([]);
-  
-    useEffect(() => {
-      fetch("https://turobunnuurisipatana.github.io/bukapuasa.json", {
-        method: "GET",
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          setBukaPuasa(data);
-        })
-        .catch((error) => console.log(error));
-      }, []);
+  const bukaPuasa = pelaksanaBukaPuasa;
 
   return (
     <section
