@@ -5,22 +5,29 @@ import { formatTanggal } from "../constants/functions";
 
 export default function Ramadhan({tanggal, bukapuasa}) {
   const [ramadhan, setRamadhan] = useState(false);
-  
+  let catatan = [
+    "Jadwal buka puasa ini bersifat sementara",
+    "Bagi yang ingin bergabung / mengundurkan diri / tukar jadwal, agar segera menghubungi Pengurus BTM Turobunnur Sipatana",
+  ];
+
+  let waktu = new Date();
+  let tahun = waktu.getFullYear();
+
   return (
     <>
       <ButtonSecondary
-        title="Ramadhan 1446 H / 2025 M"
+        title={`Ramadhan ${tahun - 579} H / ${tahun} M`}
         click={() => setRamadhan((prevState) => !prevState)}
       />
       <div
         className={clsx(
           "fixed z-10 left-0 right-0 top-0 size-0 opacity-0 transition-all duration-300 bg-white overflow-auto",
-          ramadhan ? "size-full opacity-100" : "pointer-events-none"
+          ramadhan ? "size-full opacity-100" : "pointer-events-none",
         )}
       >
         <div className="w-full bg-green-700 flex justify-between items-center shadow mb-5">
           <h1 className="text-white text-xs sm:text-xl ms-2 sm:ms-4 font-bold">
-            Ramadhan 1446 H / 2025 M
+            Ramadhan {tahun - 579} H / {tahun} M
           </h1>
           <div className="flex justify-center items-center">
             <i
@@ -69,6 +76,14 @@ export default function Ramadhan({tanggal, bukapuasa}) {
                 ))}
               </tbody>
             </table>
+            <div className="w-full mb-5">
+              <p className="font-bold">Catatan :</p>
+              {catatan.map((cat, index) => (
+                <p key={index} className="">
+                  {index + 1}. {cat}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </div>

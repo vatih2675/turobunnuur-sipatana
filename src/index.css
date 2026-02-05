@@ -14,7 +14,7 @@
 }
 
 #canvas{
-  background-image: url('/public/images/foto.png');
+  background-image: url('/public/images/foto.jpg');
   background-position: center;
   background-size: cover;
 }
