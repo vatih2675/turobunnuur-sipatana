@@ -63,24 +63,20 @@ export default function AyatHarian() {
   return (
     <>
       <div className="relative w-full h-full bg-white/80 rounded-2xl shadow-black/30 shadow-lg overflow-auto p-2 flex flex-col justify-between items-center transition-all duration-300">
-        <div className="w-full flex justify-between items-center">
-          <h1 className="font-bold text-base sm:text-lg text-center p-1">
-            Ayat Harian
-          </h1>
-          <p className="text-sm">
+        <h1 className="font-bold text-base sm:text-lg text-center p-1">
+          Ayat Harian
+        </h1>
+        {/* <div className="w-full flex justify-between items-center">
+          <p className="text-xs">
             {nomorAyat ? namaSurat + " " + nomorSurat + ":" + nomorAyat : ""}
           </p>
-        </div>
+        </div> */}
         <div className="flex flex-col sm:gap-2 gap-2 sm:px-4">
-          <p className="text-center text-xl sm:text-2xl">
-            {nomorAyat ? arab : ""}
-          </p>
+          <p className="text-center text-xl sm:text-3xl">{arab}</p>
           <p className="text-center text-xs italic text-gray-600   sm:text-sm">
-            {nomorAyat ? latin : ""}
+            {latin}
           </p>
-          <p className="text-center text-xs sm:text-sm">
-            {nomorAyat ? terjemahan : ""}
-          </p>
+          <p className="text-center text-xs sm:text-sm">{terjemahan}</p>
         </div>
         <p className="text-center italic text-xs"></p>
       </div>
