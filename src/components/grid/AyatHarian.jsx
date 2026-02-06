@@ -72,11 +72,15 @@ export default function AyatHarian() {
           </p>
         </div>
         <div className="flex flex-col sm:gap-2 gap-2 sm:px-4">
-          <p className="text-center text-xl sm:text-2xl">{arab}</p>
-          <p className="text-center text-xs italic text-gray-600   sm:text-sm">
-            {latin}
+          <p className="text-center text-xl sm:text-2xl">
+            {nomorAyat ? arab : ""}
           </p>
-          <p className="text-center text-xs sm:text-sm">{terjemahan}</p>
+          <p className="text-center text-xs italic text-gray-600   sm:text-sm">
+            {nomorAyat ? latin : ""}
+          </p>
+          <p className="text-center text-xs sm:text-sm">
+            {nomorAyat ? terjemahan : ""}
+          </p>
         </div>
         <p className="text-center italic text-xs"></p>
       </div>
