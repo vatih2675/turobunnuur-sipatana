@@ -57,17 +57,17 @@ export const pelaksanaBukaPuasa = [
   {
     hijriyah: 12,
     masehi: "3/1/26",
-    nama: "SONI LIHAWA, KA ARI, Hj. HIJIRI IBRAHIM, MIS GANI, Kel. KIDO",
+    nama: "SONI LIHAWA, Ka ARI, Hj. HIJIRI IBRAHIM, MIS GANI, Kel. KIDO",
   },
   {
     hijriyah: 13,
     masehi: "3/2/26",
-    nama: "OM YAN, ELVI ISMAIL, ZABIR LUAWO, RITA ISMAIL, UDIN HAMUL",
+    nama: "Om YAN, ELVI ISMAIL, ZABIR LUAWO, RITA ISMAIL, UDIN HAMUL",
   },
   {
     hijriyah: 14,
     masehi: "3/3/26",
-    nama: "HELMI PODUNGGE, OM RUDI, WINDRA PODUNGGE, ABDUL RAHMAN PODUNGGE",
+    nama: "HELMI PODUNGGE, Om RUDI, WINDRA PODUNGGE, ABDUL RAHMAN PODUNGGE",
   },
   {
     hijriyah: 15,
@@ -102,7 +102,7 @@ export const pelaksanaBukaPuasa = [
   {
     hijriyah: 21,
     masehi: "3/10/26",
-    nama: "ZULKIFLI AKASE, Kel. MAKU, MAS TOTOK",
+    nama: "ZULKIFLI AKASE, Kel. MAKU, Mas TOTOK",
   },
   {
     hijriyah: 22,
