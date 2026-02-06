@@ -44,12 +44,14 @@ export default function Ramadhan({tanggal, bukapuasa}) {
             <table className="w-full mb-2 sm:mb-5 text-[0.5rem] sm:text-base">
               <thead>
                 <tr>
-                  <th className="px-2 border border-gray-700 bg-green-700 text-white w-[10%] sm:w-[10%]">
-                    RAMADHAN HARI KE
+                  <th className="px-2 border border-gray-700 bg-green-700 text-white w-[5%] sm:w-[5%]">
+                    RAMADHAN
+                    <br />
+                    HARI KE
                   </th>
-                  <th className="px-2 border border-gray-700 bg-green-700 text-white w-[25%] sm:w-[18%]">
+                  {/* <th className="px-2 border border-gray-700 bg-green-700 text-white w-[25%] sm:w-[18%]">
                     TANGGAL
-                  </th>
+                  </th> */}
                   <th className="px-2 border border-gray-700 bg-green-700 text-white w-[65%] sm:w[72%]">
                     NAMA PELAKSANA
                   </th>
@@ -66,9 +68,9 @@ export default function Ramadhan({tanggal, bukapuasa}) {
                     <td className="p-1 sm:p-2 border border-gray-700 text-center">
                       {bp.hijriyah}
                     </td>
-                    <td className="p-1 sm:p-2 border border-gray-700 text-center">
+                    {/* <td className="p-1 sm:p-2 border border-gray-700 text-center">
                       {formatTanggal(bp.masehi)}
-                    </td>
+                    </td> */}
                     <td className="p-1 sm:p-2 border border-gray-700">
                       {bp.nama}
                     </td>
