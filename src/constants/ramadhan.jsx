@@ -7,12 +7,12 @@ export const pelaksanaBukaPuasa = [
   {
     hijriyah: 2,
     masehi: "2/19/26",
-    nama: "IBU LINDA, Hj. TALHA HASIRU, RISNA MBUTI, AKON ISHAK, HAMDAN ISHAK",
+    nama: "Ibu LINDA, Hj. TALHA HASIRU, RISNA MBUTI, AKON ISHAK, HAMDAN ISHAK",
   },
   {
     hijriyah: 3,
     masehi: "2/20/26",
-    nama: "ZAINAL SALEH, DODI ISHAK, YUSUF ISHAK, NANANG ISHAK, IBU MARTA",
+    nama: "ZAINAL SALEH, DODI ISHAK, YUSUF ISHAK, NANANG ISHAK, Ibu MARTA",
   },
   {
     hijriyah: 4,
@@ -27,17 +27,17 @@ export const pelaksanaBukaPuasa = [
   {
     hijriyah: 6,
     masehi: "2/23/26",
-    nama: "KEL. (Alm.) Hj. NUN T., Hj. RAMLA TOBAMBA, NAZIB T., MOH. ZUHRI T., BAS UTON",
+    nama: "Kel. (Alm.) Hj. NUN T., Hj. RAMLA TOBAMBA, NAZIB T., MOH. ZUHRI T., BAS UTON",
   },
   {
     hijriyah: 7,
     masehi: "2/24/26",
-    nama: "KEL. LANTU, RIDWAN IDRAK, YUSRI IDRAK, LINDA MIOLO, FAUZIAH TUU, Ibu DESI SUGIWANTI",
+    nama: "Kel. LANTU, RIDWAN IDRAK, YUSRI IDRAK, LINDA MIOLO, FAUZIAH TUU, Ibu DESI SUGIWANTI",
   },
   {
     hijriyah: 8,
     masehi: "2/25/26",
-    nama: "KEL. NOKI, MARGARETA KATILI, RAMLA HOU",
+    nama: "Kel. NOKI, MARGARETA KATILI, RAMLA HOU",
   },
   {
     hijriyah: 9,
@@ -47,17 +47,17 @@ export const pelaksanaBukaPuasa = [
   {
     hijriyah: 10,
     masehi: "2/27/26",
-    nama: "KEL. ARIFIN HELINGO, Hj. LIKO PODUNGGE, KEL. (Alm.) MASKUR HELINGO",
+    nama: "Kel. ARIFIN HELINGO, Hj. LIKO PODUNGGE, Kel. (Alm.) MASKUR HELINGO",
   },
   {
     hijriyah: 11,
     masehi: "2/28/26",
-    nama: "KEL. JAHJA",
+    nama: "Kel. JAHJA",
   },
   {
     hijriyah: 12,
     masehi: "3/1/26",
-    nama: "SONI LIHAWA, KA ARI, Hj. HIJIRI IBRAHIM, MIS GANI, KEL. KIDO",
+    nama: "SONI LIHAWA, KA ARI, Hj. HIJIRI IBRAHIM, MIS GANI, Kel. KIDO",
   },
   {
     hijriyah: 13,
@@ -72,47 +72,47 @@ export const pelaksanaBukaPuasa = [
   {
     hijriyah: 15,
     masehi: "3/4/26",
-    nama: "KEL. HARUN, KEL. PANEO, RUSTAM KASIM",
+    nama: "Kel. HARUN, Kel. PANEO, RUSTAM KASIM",
   },
   {
     hijriyah: 16,
     masehi: "3/5/26",
-    nama: "Hj. FADLINA PODUNGGE, MADI INA, KEL. TAHIR MOHAMAD, KEL. (Alm.) H. SULEMAN KALLY",
+    nama: "Hj. FADLINA PODUNGGE, MADI INA, Kel. TAHIR MOHAMAD, Kel. (Alm.) H. SULEMAN KALLY",
   },
   {
     hijriyah: 17,
     masehi: "3/6/26",
-    nama: "KEL. (Alm.) BAKARI HELINGO – TOLINGGI, YAYUK VAN SOLANG",
+    nama: "Kel. (Alm.) BAKARI HELINGO – TOLINGGI, YAYUK VAN SOLANG",
   },
   {
     hijriyah: 18,
     masehi: "3/7/26",
-    nama: "IMAN B. ANTU, NINGSIH PODUNGGE, KEL. MATULU, CENDA GAFUR",
+    nama: "IMAN B. ANTU, NINGSIH PODUNGGE, Kel. MATULU, CENDA GAFUR",
   },
   {
     hijriyah: 19,
     masehi: "3/8/26",
-    nama: "KEL. (Alm.) SUPRIO BUTOLO – KEL. HELINGO",
+    nama: "Kel. (Alm.) SUPRIO BUTOLO – Kel. HELINGO",
   },
   {
     hijriyah: 20,
     masehi: "3/9/26",
-    nama: "KEL. HASAN – ABDULLAH, ANDREAS LIARIAN",
+    nama: "Kel. HASAN – ABDULLAH, ANDREAS LIARIAN",
   },
   {
     hijriyah: 21,
     masehi: "3/10/26",
-    nama: "ZULKIFLI AKASE, KEL. MAKU, MAS TOTOK",
+    nama: "ZULKIFLI AKASE, Kel. MAKU, MAS TOTOK",
   },
   {
     hijriyah: 22,
     masehi: "3/11/26",
-    nama: "KEL. (Alm.) H. EKA PODUNGGE",
+    nama: "Kel. (Alm.) H. EKA PODUNGGE",
   },
   {
     hijriyah: 23,
     masehi: "3/12/26",
-    nama: "KEL. TONIYANTO KASIM, INTAN S. KASIM, CRYSTAL KASIM, MUTIARA M. KASIM ",
+    nama: "Kel. TONIYANTO KASIM, INTAN S. KASIM, CRYSTAL KASIM, MUTIARA M. KASIM ",
   },
   {
     hijriyah: 24,
@@ -137,7 +137,7 @@ export const pelaksanaBukaPuasa = [
   {
     hijriyah: 28,
     masehi: "3/17/26",
-    nama: "KEL. NURDIN BAINO, KEL. TUE, RASID GIONTE, KEL. MBUTI – KEL. LIHAWA",
+    nama: "Kel. NURDIN BAINO, Kel. TUE, RASID GIONTE, Kel. MBUTI – Kel. LIHAWA",
   },
   {
     hijriyah: 29,
@@ -147,6 +147,6 @@ export const pelaksanaBukaPuasa = [
   {
     hijriyah: 30,
     masehi: "3/19/26",
-    nama: "KELUARGA BESAR CUCU / CICIT LT HELINGO",
+    nama: "Keluarga Besar Cucu / Cicit LT HELINGO",
   },
 ];
