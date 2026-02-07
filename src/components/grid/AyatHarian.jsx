@@ -17,46 +17,46 @@ export default function AyatHarian() {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  useEffect(() => {
-    setInterval(
-      () => {
-        let noSurat = getRandomIntInclusive(1, 114);
-        let linkSuratRandom = `https://quran-api-id.vercel.app/surah/${noSurat}/`;
-        fetch(linkSuratRandom, {
-          method: "GET",
-          body: JSON.stringify(),
-        })
-          .then((response) => response.json())
-          .then((dataSuratRandom) => {
-            setSuratRandom(dataSuratRandom.data);
-            setNomorSurat(dataSuratRandom.data.number);
-            setJumlahAyat(dataSuratRandom.data.numberOfVerses);
-            setNamaSurat(dataSuratRandom.data.name.transliteration.id);
-          })
-          .catch((error) => console.log(error));
+  // useEffect(() => {
+  //   setInterval(
+  //     () => {
+  //       let noSurat = getRandomIntInclusive(1, 114);
+  //       let linkSuratRandom = `https://quran-api-id.vercel.app/surah/${noSurat}/`;
+  //       fetch(linkSuratRandom, {
+  //         method: "GET",
+  //         body: JSON.stringify(),
+  //       })
+  //         .then((response) => response.json())
+  //         .then((dataSuratRandom) => {
+  //           setSuratRandom(dataSuratRandom.data);
+  //           setNomorSurat(dataSuratRandom.data.number);
+  //           setJumlahAyat(dataSuratRandom.data.numberOfVerses);
+  //           setNamaSurat(dataSuratRandom.data.name.transliteration.id);
+  //         })
+  //         .catch((error) => console.log(error));
 
-        if (suratRandom != null) {
-          let noAyat = getRandomIntInclusive(1, jumlahAyat);
-          let linkAyatRandom = linkSuratRandom + noAyat;
+  //       if (suratRandom != null) {
+  //         let noAyat = getRandomIntInclusive(1, jumlahAyat);
+  //         let linkAyatRandom = linkSuratRandom + noAyat;
 
-          fetch(linkAyatRandom, {
-            method: "GET",
-            body: JSON.stringify(),
-          })
-            .then((response) => response.json())
-            .then((dataRandom) => {
-              setAyatRandom(dataRandom.data);
-              setNomorAyat(noAyat);
-              setArab(dataRandom.data.text.arab);
-              setLatin(dataRandom.data.text.transliteration.en);
-              setTerjemahan(dataRandom.data.translation.id);
-            })
-            .catch((error) => console.log(error));
-        }
-      },
-      1 * 60 * 1000,
-    );
-  }, [suratRandom, jumlahAyat, ayatRandom]);
+  //         fetch(linkAyatRandom, {
+  //           method: "GET",
+  //           body: JSON.stringify(),
+  //         })
+  //           .then((response) => response.json())
+  //           .then((dataRandom) => {
+  //             setAyatRandom(dataRandom.data);
+  //             setNomorAyat(noAyat);
+  //             setArab(dataRandom.data.text.arab);
+  //             setLatin(dataRandom.data.text.transliteration.en);
+  //             setTerjemahan(dataRandom.data.translation.id);
+  //           })
+  //           .catch((error) => console.log(error));
+  //       }
+  //     },
+  //     1 * 60 * 1000,
+  //   );
+  // }, [suratRandom, jumlahAyat, ayatRandom]);
 
   // console.log(namaSurat, nomorSurat, nomorAyat);
 
