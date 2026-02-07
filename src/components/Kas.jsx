@@ -49,7 +49,7 @@ export default function Kas() {
           src="https://turabunnur.web.id/"
           className="w-full h-full"
         ></iframe> */}
-        <div className="w-full h-full flex flex-col sm:flex-row justify-center items-center gap-10">
+        <div className="w-full h-full flex flex-col sm:flex-row justify-center items-center gap-7 sm:gap-10">
           <div className="w-50 sm:w-70 h-50 sm:h-70 flex justify-center items-center flex-col bg-linear-to-b from-green-500 to-green-700 p-5 rounded-4xl text-white shadow-black/50 shadow-lg">
             <i className="bi-cash-coin text-4xl sm:text-6xl mb-3 sm:mb-5"></i>
             <h3 className="font-bold text-xl">MASUK</h3>
