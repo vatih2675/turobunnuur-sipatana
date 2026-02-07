@@ -5,6 +5,7 @@ import Ramadhan from "./components/Ramadhan";
 import Grid from "./components/Grid";
 import { React, useState, useEffect } from "react";
 import Admin from "./components/Admin";
+import Donasi from "./components/Donasi";
 
 export default function App() {
   const [tanggalHariIni, setTanggalHariIni] = useState(null);
@@ -78,8 +79,9 @@ export default function App() {
               {dataApp.settings.address}
             </p>
           </div>
-          <div className="mt-2 sm:mt-5 flex justify-center items-center gap-1 sm:gap-4">
+          <div className="mt-2 sm:mt-5 flex justify-center items-center gap-1 sm:gap-3">
             <Kas />
+            {/* <Donasi /> */}
             <Ramadhan tanggal={tanggalHariIni} bukapuasa={bukaPuasa} />
             {/* <Admin /> */}
 
