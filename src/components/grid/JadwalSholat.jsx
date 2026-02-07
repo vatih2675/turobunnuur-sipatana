@@ -49,8 +49,13 @@ export default function JadwalSholat({ tanggalhariini }) {
     <>
       <div className="relative w-full h-fit bg-white/80 rounded-2xl shadow-black/30 shadow-lg overflow-hidden transition-all duration-300">
         <div className="w-full text-center p-1">
-          <h1 className="font-bold text-base sm:text-lg">Jadwal Sholat</h1>
-          <span className="text-sm text-green-800">{tanggalhariini}</span>
+          <h1 className="font-bold text-base sm:text-lg">
+            <i className="bi-clock me-1"></i>Jadwal Sholat
+          </h1>
+          <span className="text-sm text-green-800">
+            <i className="bi-calendar3 me-1"></i>
+            {tanggalhariini}
+          </span>
         </div>
         <div className="px-2 text-[0.9rem]">
           <table className="w-full text-xs sm:text-sm">

@@ -57,6 +57,10 @@ export default function App() {
     }, 1);
   }, []);
 
+  function linkAksesOpen(link) {
+    window.open(link);
+  }
+
   const bukaPuasa = pelaksanaBukaPuasa;
 
   return (
@@ -71,11 +75,15 @@ export default function App() {
             className="w-34 sm:w-72 pointer-events-none transition-all duration-300 bg-white/70 shadow-black/30 shadow-lg p-1 rounded-full"
             // animate-[spin_100s_ease-in-out_infinite]
           />
-          <div className="bg-white/70 shadow-black/30 shadow-lg py-2 px-3 rounded-2xl">
+          <div
+            onClick={() => linkAksesOpen(dataApp.settings.maps)}
+            className="bg-white/70 shadow-black/30 shadow-lg py-2 px-3 rounded-2xl cursor-pointer"
+          >
             <h1 className="text-green-800 text-center font-black text-2xl sm:text-5xl uppercase transition-all duration-300">
               {dataApp.settings.title}
             </h1>
             <p className="text-center text-[0.9rem] sm:text-base font-bold transition-all duration-300">
+              <i className="bi-geo-alt-fill me-1"></i>
               {dataApp.settings.address}
             </p>
           </div>
@@ -88,8 +96,14 @@ export default function App() {
             {/* <a href="https://turabunnur.web.id/home" target="_blank" className="px-2 sm:px-8 py-1 sm:py-2 bg-white border border-green-700 rounded-l-full rounded-r-full text-green-700 hover:bg-green-100 duration-300 hover:shadow-md text-[0.8rem] sm:text-base">Dashboard Admin</a> */}
           </div>
           <div className="absolute top-0 w-full flex sm:flex-col flex-row justify-between sm:justify-start items-center sm:items-start text-green-800 font-black text-[0.8rem] sm:text-lg transition-all duration-300">
-            <span className="tanggalHariIni">{tanggalHariIni}</span>
-            <span className="jamBerjalan">{jamBerjalan}</span>
+            <span className="tanggalHariIni">
+              <i className="bi-calendar3 me-1"></i>
+              {tanggalHariIni}
+            </span>
+            <span className="jamBerjalan">
+              <i className="bi-clock me-1"></i>
+              {jamBerjalan}
+            </span>
           </div>
         </div>
         <Grid tanggal={tanggalHariIni} bukapuasa={bukaPuasa} />

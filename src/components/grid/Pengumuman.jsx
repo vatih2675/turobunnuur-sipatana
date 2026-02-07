@@ -9,7 +9,7 @@ export default function Pengumuman({tanggal, bukapuasa}) {
     <>
       <div className="relative w-full h-full bg-white/80 rounded-2xl shadow-black/30 shadow-lg overflow-hidden transition-all duration-300">
         <h1 className="font-bold text-base sm:text-lg text-center p-1">
-          Pengumuman
+          <i className="bi-bell-fill me-1"></i>Pengumuman
         </h1>
         <div className="w-full h-full px-1 pb-10 absolute overflow-auto text-xs">
           {bukapuasa.map((bp, index) =>
