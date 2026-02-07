@@ -67,7 +67,8 @@ export default function App() {
         <div className="w-full sm:w-9/12 h-full flex flex-col justify-center items-center gap-4 relative">
           <img
             src={`images/${dataApp.settings.logo}`}
-            className="w-34 sm:w-72 pointer-events-none transition-all duration-300 bg-white/70 shadow-black/30 shadow-lg p-1 rounded-full animate-[spin_100s_ease-in-out_infinite]"
+            className="w-34 sm:w-72 pointer-events-none transition-all duration-300 bg-white/70 shadow-black/30 shadow-lg p-1 rounded-full"
+            // animate-[spin_100s_ease-in-out_infinite]
           />
           <div className="bg-white/70 shadow-black/30 shadow-lg py-2 px-3 rounded-2xl">
             <h1 className="text-green-800 text-center font-black text-2xl sm:text-5xl uppercase transition-all duration-300">
