@@ -40,7 +40,7 @@ export default function Kas() {
         )}
       >
         <i
-          className="bi-x-lg absolute p-4 hover:text-red-500 duration-300 cursor-pointer text-gray-300"
+          className="bi-x-lg absolute right-0 p-4 hover:text-red-500 duration-300 cursor-pointer text-gray-300"
           onClick={() => setKasTampil((prevState) => !prevState)}
         ></i>
         {/* <iframe
