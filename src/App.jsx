@@ -6,6 +6,7 @@ import Grid from "./components/Grid";
 import { React, useState, useEffect } from "react";
 import Admin from "./components/Admin";
 import Donasi from "./components/Donasi";
+import { linkAksesOpen } from "./constants/functions";
 
 export default function App() {
   const [tanggalHariIni, setTanggalHariIni] = useState(null);
@@ -56,10 +57,6 @@ export default function App() {
       setTahun(waktu.getFullYear());
     }, 1);
   }, []);
-
-  function linkAksesOpen(link) {
-    window.open(link);
-  }
 
   const bukaPuasa = pelaksanaBukaPuasa;
 

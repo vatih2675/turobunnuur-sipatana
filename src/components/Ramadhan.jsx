@@ -1,9 +1,9 @@
 import ButtonSecondary from "./button/Secondary";
 import clsx from "clsx";
 import { React, useEffect, useState } from "react";
-import { formatTanggal } from "../constants/functions";
+import { formatTanggal, linkAksesOpen } from "../constants/functions";
 
-export default function Ramadhan({tanggal, bukapuasa}) {
+export default function Ramadhan({ tanggal, bukapuasa }) {
   const [ramadhan, setRamadhan] = useState(false);
   let catatan = [
     "Jadwal buka puasa ini bersifat sementara",
@@ -32,6 +32,14 @@ export default function Ramadhan({tanggal, bukapuasa}) {
             / {tahun} M
           </h1>
           <div className="flex justify-center items-center">
+            <i
+              className="bi-printer text-gray-300 flex justify-center items-center w-8 sm:w-10 h-8 sm:h-10 text-xs sm:text-base cursor-pointer hover:bg-white hover:text-green-700 transition-color duration-300"
+              onClick={() =>
+                linkAksesOpen(
+                  "https://turobunnuurisipatana.github.io/Jadwal Buka Puasa.pdf",
+                )
+              }
+            ></i>
             <i
               className="bi-x-lg text-gray-300 flex justify-center items-center w-8 sm:w-10 h-8 sm:h-10 text-xs sm:text-base cursor-pointer hover:bg-white hover:text-red-500 transition-color duration-300"
               onClick={() => setRamadhan((prevState) => !prevState)}
