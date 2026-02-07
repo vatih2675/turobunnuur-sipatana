@@ -30,7 +30,8 @@ export default function Kas() {
   return (
     <>
       <ButtonPrimary
-        title="Kas Masjid"
+        title={`Kas Masjid (Rp. ${angka(masuk - keluar)})`}
+        icon="bi-cash-coin"
         click={() => setKasTampil((prevState) => !prevState)}
       />
       <div

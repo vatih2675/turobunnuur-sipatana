@@ -17,6 +17,7 @@ export default function Ramadhan({tanggal, bukapuasa}) {
     <>
       <ButtonSecondary
         title={`Ramadhan ${tahun - 579} H / ${tahun} M`}
+        icon="bi-moon-stars"
         click={() => setRamadhan((prevState) => !prevState)}
       />
       <div
@@ -27,7 +28,8 @@ export default function Ramadhan({tanggal, bukapuasa}) {
       >
         <div className="w-full bg-green-700 flex justify-between items-center shadow mb-5">
           <h1 className="text-white text-xs sm:text-xl ms-2 sm:ms-4 font-bold">
-            Ramadhan {tahun - 579} H / {tahun} M
+            <i className="bi-moon-stars-fill me-2"></i>Ramadhan {tahun - 579} H
+            / {tahun} M
           </h1>
           <div className="flex justify-center items-center">
             <i
