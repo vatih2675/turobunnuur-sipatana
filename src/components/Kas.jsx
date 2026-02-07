@@ -48,19 +48,19 @@ export default function Kas() {
           className="w-full h-full"
         ></iframe> */}
         <div className="w-full h-full flex flex-col sm:flex-row justify-center items-center gap-10">
-          <div className="w-60 sm:w-70 h-60 sm:h-70 flex justify-center items-center flex-col bg-linear-to-b from-green-500 to-green-700 p-5 rounded-4xl text-white">
+          <div className="w-60 sm:w-70 h-60 sm:h-70 flex justify-center items-center flex-col bg-linear-to-b from-green-500 to-green-700 p-5 rounded-4xl text-white shadow-black/50 shadow-lg">
             <h3 className="font-bold text-xl">MASUK</h3>
             <h1 className="font-black text-2xl sm:text-3xl">
               Rp. {angka(masuk)}
             </h1>
           </div>
-          <div className="w-60 sm:w-70 h-60 sm:h-70 flex justify-center items-center flex-col bg-linear-to-b from-red-500 to-red-700 p-5 rounded-4xl text-white">
+          <div className="w-60 sm:w-70 h-60 sm:h-70 flex justify-center items-center flex-col bg-linear-to-b from-red-500 to-red-700 p-5 rounded-4xl text-white shadow-black/50 shadow-lg">
             <h3 className="font-bold text-xl">KELUAR</h3>
             <h1 className="font-black text-2xl sm:text-3xl">
               Rp. {angka(keluar)}
             </h1>
           </div>
-          <div className="w-60 sm:w-70 h-60 sm:h-70 flex justify-center items-center flex-col bg-linear-to-b from-gray-500  to-gray-700 p-5 rounded-4xl text-white">
+          <div className="w-60 sm:w-70 h-60 sm:h-70 flex justify-center items-center flex-col bg-linear-to-b from-gray-500  to-gray-700 p-5 rounded-4xl text-white shadow-black/50 shadow-lg">
             <h3 className="font-bold text-xl">SALDO</h3>
             <h1 className="font-black text-2xl sm:text-3xl">
               Rp. {angka(masuk - keluar)}
