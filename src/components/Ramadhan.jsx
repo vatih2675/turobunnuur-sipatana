@@ -5,10 +5,22 @@ import { formatTanggal, linkAksesOpen } from "../constants/functions";
 
 export default function Ramadhan({ tanggal, bukapuasa }) {
   const [ramadhan, setRamadhan] = useState(false);
-  let catatan = [
-    "Jadwal buka puasa ini bersifat sementara",
-    "Bagi yang ingin bergabung / mengundurkan diri / tukar jadwal, agar segera menghubungi Pengurus BTM Turobunnur Sipatana",
-  ];
+  let catatan = [];
+
+  function tampilCatatan() {
+    if (catatan.length > 1) {
+      return (
+        <div className="w-full mb-5">
+          <p className="font-bold">Catatan :</p>
+          {catatan.map((cat, index) => (
+            <p key={index} className="">
+              {index + 1}. {cat}
+            </p>
+          ))}
+        </div>
+      );
+    }
+  }
 
   let waktu = new Date();
   let tahun = waktu.getFullYear();
@@ -76,7 +88,9 @@ export default function Ramadhan({ tanggal, bukapuasa }) {
                     key={index}
                   >
                     <td className="p-1 sm:p-2 border border-gray-700 text-center">
-                      {bp.hijriyah}
+                      {bp.hijriyah == 30
+                        ? "29 / 30 (Malam Takbiran)"
+                        : bp.hijriyah}
                     </td>
                     {/* <td className="p-1 sm:p-2 border border-gray-700 text-center">
                       {formatTanggal(bp.masehi)}
@@ -88,14 +102,7 @@ export default function Ramadhan({ tanggal, bukapuasa }) {
                 ))}
               </tbody>
             </table>
-            <div className="w-full mb-5">
-              <p className="font-bold">Catatan :</p>
-              {catatan.map((cat, index) => (
-                <p key={index} className="">
-                  {index + 1}. {cat}
-                </p>
-              ))}
-            </div>
+            {tampilCatatan()}
           </div>
         </div>
       </div>

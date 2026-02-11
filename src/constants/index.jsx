@@ -29,15 +29,7 @@ export const dataApp = {
 // isi : ""
 export const pengumuman = [
   {
-    tanggal: "2/5/26",
+    tanggal: "2/11/26",
     isi: "Jadwal buka puasa sudah tersedia. silahkan klik tombol Ramadhan 1447 H / 2026 M.",
-  },
-  {
-    tanggal: "2/5/26",
-    isi: "Jadwal buka puasa bersifat sementara, dan akan ada perubahan.",
-  },
-  {
-    tanggal: "2/5/26",
-    isi: "Bagi yang ingin bergabung / mengundurkan diri / tukar jadwal pelaksanaan buka puasa, agar segera menghubungi Pengurus BTM Turobunnur Sipatana",
   },
 ];
