@@ -71,9 +71,9 @@ export default function Ramadhan({ tanggal, bukapuasa }) {
                     <br />
                     HARI KE
                   </th>
-                  {/* <th className="px-2 border border-gray-700 bg-green-700 text-white w-[25%] sm:w-[18%]">
+                  <th className="px-2 border border-gray-700 bg-green-700 text-white w-[25%] sm:w-[18%]">
                     TANGGAL
-                  </th> */}
+                  </th>
                   <th className="px-2 border border-gray-700 bg-green-700 text-white w-[65%] sm:w[72%]">
                     NAMA PELAKSANA
                   </th>
@@ -92,9 +92,9 @@ export default function Ramadhan({ tanggal, bukapuasa }) {
                         ? "29 / 30 (Malam Takbiran)"
                         : bp.hijriyah}
                     </td>
-                    {/* <td className="p-1 sm:p-2 border border-gray-700 text-center">
+                    <td className="p-1 sm:p-2 border border-gray-700 text-center">
                       {formatTanggal(bp.masehi)}
-                    </td> */}
+                    </td>
                     <td className="p-1 sm:p-2 border border-gray-700">
                       {bp.nama}
                     </td>
