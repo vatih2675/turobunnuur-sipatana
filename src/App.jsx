@@ -11,6 +11,7 @@ import { linkAksesOpen } from "./constants/functions";
 export default function App() {
   const [tanggalHariIni, setTanggalHariIni] = useState(null);
   const [jamBerjalan, setJamBerjalan] = useState(null);
+  const [bukaPuasaRamadhan, setBukaPuasaRamadhan] = useState([]);
   const [tahun, setTahun] = useState(null);
 
   useEffect(() => {
@@ -58,7 +59,21 @@ export default function App() {
     }, 1);
   }, []);
 
+  // const urlBukaPuasaRamadhan =
+  //   "http://hanamiprinting.great-site.net/api/buka-puasa-ramadhan";
+  // useEffect(() => {
+  //   fetch(urlBukaPuasaRamadhan, {
+  //     method: "GET",
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setBukaPuasaRamadhan(data.data);
+  //     })
+  //     .catch((error) => console.log(error));
+  // }, []);
   const bukaPuasa = pelaksanaBukaPuasa;
+
+  // console.log(bukaPuasaRamadhan);
 
   return (
     <section

@@ -83,17 +83,15 @@ export default function Ramadhan({ tanggal, bukapuasa }) {
                 {bukapuasa.map((bp, index) => (
                   <tr
                     className={
-                      formatTanggal(bp.masehi) == tanggal ? "bg-green-100" : ""
+                      formatTanggal(bp.tanggal) == tanggal ? "bg-green-100" : ""
                     }
                     key={index}
                   >
                     <td className="p-1 sm:p-2 border border-gray-700 text-center">
-                      {bp.hijriyah == 30
-                        ? "29 / 30 (Malam Takbiran)"
-                        : bp.hijriyah}
+                      {bp.id == 30 ? "29 / 30 (Malam Takbiran)" : bp.id}
                     </td>
                     <td className="p-1 sm:p-2 border border-gray-700 text-center">
-                      {formatTanggal(bp.masehi)}
+                      {formatTanggal(bp.tanggal)}
                     </td>
                     <td className="p-1 sm:p-2 border border-gray-700">
                       {bp.nama}

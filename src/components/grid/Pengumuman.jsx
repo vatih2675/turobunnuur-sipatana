@@ -13,7 +13,7 @@ export default function Pengumuman({tanggal, bukapuasa}) {
         </h1>
         <div className="w-full h-full px-1 pb-10 absolute overflow-auto text-xs">
           {bukapuasa.map((bp, index) =>
-            formatTanggal(bp.masehi) === tanggal ? (
+            formatTanggal(bp.tanggal) === tanggal ? (
               <BukaPuasa key={index} bp={bp} />
             ) : null,
           )}
